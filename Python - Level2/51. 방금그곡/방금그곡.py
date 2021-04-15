@@ -3,7 +3,8 @@ m = "ABCDEFG"
 # 재생시간 HH:MM, 노래 제목, 노래의 멜로디
 musicinfos = ["12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF"]
 
-# 총 길이를 일치화 하기 위해 #이 있을 경우 소문자로 바꿔줌
+
+# 1. 전체 길이를 일치화 하기 위해 #이 있을 경우 소문자로 바꿔줌
 def remove(s):
     s = s.replace('C#', 'c')
     s = s.replace('D#', 'd')
@@ -13,23 +14,64 @@ def remove(s):
 
     return s
 
-def time(list):
-    start = list[0].split(':')
-    end = list[1].split(':')
-    return start, end
+# 2. 노래의 재생시간 계산
+def calculate_time(list):
+    start_time1 = list[0].split(',')[0].split(':')
+    end_time1 = list[0].split(',')[1].split(':')
+    start_time2 = list[1].split(',')[0].split(':')
+    end_time2 = list[1].split(',')[1].split(':')
 
+    play_hour1 = int(end_time1[0]) - int(start_time1[0])
+    play_hour2 = int(end_time2[0]) - int(start_time2[0])
+
+    if play_hour1 == 0:
+        total1 = int(end_time1[1]) - int(start_time1[1])
+    else:
+        total1 = 60 * play_hour1 + int(end_time1[1]) - int(start_time1[1])
+
+    if play_hour2 == 0:
+        total2 = int(end_time2[1]) - int(start_time2[1])
+    else:
+        total2 = 60 * play_hour2 + int(end_time2[1]) - int(start_time2[1])
+
+    return total1, total2
+
+# 3. 재생중이었던 노래를 찾기 위한 함수
 def solution(m, musicinfos):
+    m = remove(m)
+    play_time = calculate_time(musicinfos)
     for idx, musicinfo in enumerate(musicinfos):
-        # 위에서 만들어둔 길이 일치 함수를 사용함
-        remove(m)
-        for idx, musicinfo in enumerate(musicinfos):
-            musicinfo = remove(musicinfo)
-            musicinfo = musicinfo.split(',')
+        musicinfo = remove(musicinfo)
+        musicinfo = musicinfo.split(',')
+
+    if play_time[0] == len(musicinfo[3]):
+        melody1 = musicinfo[3]
+    elif play_time[0] > len(musicinfo[3]):
+        melody1 = musicinfo[3] + musicinfo[3][:play_time[0]]
+    else:
+        melody1 = musicinfo[3][:play_time[0]]
 
 
-    return musicinfo[1].split(':')
+    return melody1
 
 print(solution(m, musicinfos))
+
+
+
+
+
+# def solution(m, musicinfos):
+#     for idx, musicinfo in enumerate(musicinfos):
+#         # 위에서 만들어둔 길이 일치 함수를 사용함
+#         remove(m)
+#         for idx, musicinfo in enumerate(musicinfos):
+#             musicinfo = remove(musicinfo)
+#             musicinfo = musicinfo.split(',')
+#
+#
+#     return musicinfo[1].split(':')
+#
+# print(solution(m, musicinfos))
 
 """
 def changecode(music_): 
