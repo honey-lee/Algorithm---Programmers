@@ -19,7 +19,7 @@ def calculate_time(list):
     start_time1 = list[0].split(',')[0].split(':')
     end_time1 = list[0].split(',')[1].split(':')
     start_time2 = list[1].split(',')[0].split(':')
-    end_time2 = list[1].split(',')[1].split(':')
+    end_time2 = list[1].split(',')[1].split(':')`
 
     play_hour1 = int(end_time1[0]) - int(start_time1[0])
     play_hour2 = int(end_time2[0]) - int(start_time2[0])
@@ -57,7 +57,10 @@ def solution(m, musicinfos):
 print(solution(m, musicinfos))
 
 
+a = 'abcde'
 
+a = a.replace('a', 'aa').replace('b', 'bb')
+print(a)
 
 
 # def solution(m, musicinfos):
