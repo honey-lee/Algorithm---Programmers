@@ -15,8 +15,11 @@ def solution(N, stages):
         fail.append(stages.count(i))
 
     for i in range(len(fail)):
-        failure_rate.append(fail[i] / k)
-        k -= fail[i]
+        try:
+            failure_rate.append(fail[i] / k)
+            k -= fail[i]
+        except:
+            pass
 
     failure_rate = list((idx + 1, failure_rate) for idx, failure_rate in enumerate(failure_rate))
 
