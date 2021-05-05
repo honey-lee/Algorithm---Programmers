@@ -13,11 +13,11 @@ def solution(s):
                 new_word = new_word + word[i].lower()
             else:
                 new_word = new_word + word[i].upper()
+
         answer.append(new_word)
 
-    for i in answer:
-        return i
-    # return answer
+
+    return ''.join(answer)
 
 
 print(solution(s))
