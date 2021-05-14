@@ -1,4 +1,4 @@
-from itertools import combinations
+from itertools import combinations, combinations_with_replacement
 
 # 소수 여부 판별하는 함수
 def is_prime(num):
@@ -21,7 +21,12 @@ def solution(nums):
             ans += 1
 
     return ans
-
+#
 nums = [1, 2, 7, 6, 4]
+#
+# print(solution(nums))
 
-print(solution(nums))
+test = list(combinations(nums, 3))
+print(test)
+print(len(test))
+
