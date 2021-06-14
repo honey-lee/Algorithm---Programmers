@@ -3,16 +3,17 @@
 문제의 조건은 무조건 0번 인덱스가 접두인 경우가 아닌 서로서로 접두가 되면 무조건 false 인것...
 """
 
-from collections import deque
-
 def solution(phone_book):
-    dq = deque()
-    phone_book = sorted(phone_book, key = lambda x: len(x))
-    dq.append(phone_book[-1])
+    phone_book.sort()
+    flag = True
 
-    return dq
+    for i in range(len(phone_book)-1):
+        if phone_book[i+1].startswith(phone_book[i]):
+            flag = False
+            return flag
+    return flag
 
-sample = ["119", "97674223", "1195524421"]
+sample = ["12","123","1235","567","88"]
 
 
 print(solution(sample))
