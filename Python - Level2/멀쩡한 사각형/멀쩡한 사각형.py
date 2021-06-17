@@ -1,9 +1,19 @@
 from pandas import DataFrame as df
 
 def solution(w, h):
-    square = [[0 for _ in range(w)] for _ in range(h)]
+    ans = 0
+    if w == h:
+        return w * h - h
 
-    return df(square)
+    elif w == 1 or h == 1:
+        return 0
+
+    for cur_w in range(0, w):
+        y = h - ((h * cur_w) / w)
+        if y % 1.0:
+            ans += 1
+
+    return w * h - ans - h
 
 
 
