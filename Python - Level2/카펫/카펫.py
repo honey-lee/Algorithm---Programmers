@@ -17,5 +17,5 @@ def solution(brown, yellow):
 
     return result
 
-print(solution(10, 2))
+print(solution(50, 22))
 
