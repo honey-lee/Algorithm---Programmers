@@ -1,6 +1,6 @@
 """
 함수 안에 함수 쓰기
-
+DP
 """
 
 def solution(arr):
