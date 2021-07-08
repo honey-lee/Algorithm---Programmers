@@ -43,3 +43,4 @@ print(solution(board2))
 [0 1 2 3]
 
 """
+
