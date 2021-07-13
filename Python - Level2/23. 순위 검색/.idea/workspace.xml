@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad57f100-ab33-4aad-b08f-e8ecdda5d2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Python - Level1/4. 신규 아이디 추천/s2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../18. H-Index/18. H-Index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/순위 검색.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python - Level1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python - Level1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python - Level1/4. 신규 아이디 추천(ongoing)/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python - Level1/4. 신규 아이디 추천(ongoing)/신규 아이디 추천.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python - Level1/5. 모의고사/모의고사.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python - Level1/5. 모의고사/모의고사.py" afterDir="false" />
-    </list>
+    <list default="true" id="ad57f100-ab33-4aad-b08f-e8ecdda5d2f9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,14 +9,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/순위 검색.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="627">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/s3.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -120,15 +116,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.22017045" />
@@ -136,6 +127,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -158,10 +153,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/순위 검색.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="627">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s3.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
