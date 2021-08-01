@@ -1,5 +1,8 @@
 # 슬라이딩 윈도우
+"""
+효율성 대거탈락
 
+"""
 def solution(gems):
     answer = []
     gems_set = set(gems)
