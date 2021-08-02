@@ -11,15 +11,20 @@ def is_palindrome(str):
             return False
     return True
 
+
 def solution(s):
     for i in range(len(s), 0, -1):
         for start in range(0, len(s)):
-            new_s = s[start : start + i]
+            new_s = s[start: start + i]
 
             if is_palindrome(new_s):
                 return len(new_s)
 
-print(solution("abcdcba"))
+            if start + i >= len(s):
+                break
+
+
+print(solution("abacde"))
 
 """
 1 2 3 4 5
