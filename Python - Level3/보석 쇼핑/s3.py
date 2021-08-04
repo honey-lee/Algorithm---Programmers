@@ -36,3 +36,7 @@ gems = ["DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"]
 
 print(solution(gems))
 
+
+list = [1, 2, 3, 4]
+print(list[-1:])
+print(list[1:])
